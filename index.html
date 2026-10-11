@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <meta name="description" content="My personal website, skills and projects.">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #243047;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #14213d;
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    header h1 {
+      font-size: clamp(32px, 6vw, 48px);
+      margin-bottom: 8px;
+    }
+
+    header p { color: #dbeafe; }
+
+    nav {
+      background: #1e3a5f;
+      text-align: center;
+      padding: 14px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+    }
+
+    main {
+      max-width: 850px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      background: white;
+      padding: 25px;
+      margin: 22px 0;
+      border-radius: 14px;
+      box-shadow: 0 4px 16px #14213d0c;
+    }
+
+    h2 { color: #1769aa; }
+
+    .skills span {
+      display: inline-block;
+      background: #e6f1ff;
+      padding: 6px 12px;
+      margin: 4px;
+      border-radius: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #64748b;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Hello, I'm Your Name</h1>
+    <p>Software Engineer | Technology Enthusiast</p>
+    <p>Welcome to my personal website!</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a software professional passionate about
+        technology, problem-solving and continuous learning.
+        This website showcases my experience and projects.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skills">
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>JavaScript</span>
+        <span>HTML & CSS</span>
+        <span>AWS</span>
+        <span>Docker</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <article>
+        <h3>Project One</h3>
+        <p>Add a description of a personal or professional project.</p>
+      </article>
+      <article>
+        <h3>Project Two</h3>
+        <p>Describe another project and the technologies you used.</p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: replace-with-your-public-email</p>
+      <p>
+        GitHub:
+        <a href="https://github.com/">My GitHub Profile</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
